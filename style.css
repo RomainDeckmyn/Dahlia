@@ -1,0 +1,373 @@
+/* PAGE GENERALE */
+
+  .fond {
+    background-color: #fbf0dd;
+    margin: 0;
+  }
+
+  html {
+    background-color: #606D5D;
+  }
+
+  /* Style de la barre de défilement */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Style de la poignée de la barre de défilement */
+  ::-webkit-scrollbar-thumb {
+    background-color: #944654;
+    border-radius: 10px;
+  }
+
+  /* Style de la piste de la barre de défilement */
+  ::-webkit-scrollbar-track {
+    background-color:#fbf0dd;
+  }
+
+/* FIL D'ARIANNE */
+  
+  .arianne {
+    background-color: #fbf0dd;
+    padding: 20px;
+    margin-left: 115px;
+  }
+  
+  .arianne li {
+    display: inline-block;
+  }
+
+  .arianne a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .arianne a:hover {
+    color: #ADC474;
+  }
+  
+  .arianne li:not(:last-child)::after {
+    content: " /";
+    margin: 5px 5px;
+  }
+
+
+/* NAVBAR */
+
+  .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+    background-color: #606D5D;
+    margin: 0;
+  }
+
+  .menu li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+  
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F4B5B2;
+    border: 5px;
+    scale: .1;
+    transform-origin: left;
+    transition: scale .25s;
+  }
+
+  li:hover::before {
+    scale: 1;
+  }
+
+  .menu a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    color: #272d26;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .menu a:hover {
+    color: #F4B5B2;
+  }
+  
+  .menu .active {
+    color: #F4B5B2;
+  }
+  
+/* ACCUEIL */
+
+  .bouton-accueil {
+    background-color: #6c757d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .bouton-accueil:hover {
+    background-color: #5c636a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+    /* Styles pour la newsletter */
+
+    .newsletter {
+      padding: 50px;
+      text-align: center;
+      background-color: #fbf0dd;
+    }
+
+    .newsletter h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .newsletter form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .newsletter label {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .newsletter input[type="email"] {
+      font-size: 16px;
+      padding: 10px;
+      border: 2px;
+      border-radius: 5px;
+      margin-right: 10px;
+      width: 300px;
+    }
+
+    .newsletter button {
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #606D5D;
+      font-weight: bolder;
+    }
+
+    /* Styles pour la bannière */
+
+    .banner {
+      height: 500px;
+      background-image: url("images/banniere-accueil.jpeg");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .fond-opaque {
+      background-color: #272d26;
+      opacity: 80%;
+    }
+    
+    .banner h1 {
+      font-size: 48px;
+      margin-bottom: 0;
+      color: #944654;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    
+    .banner p {
+      font-size: 24px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+      background-color: #fff;
+      color: #555;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    
+    .btn-secondary {
+      background-color: #555;
+      color: #fff;
+      margin-left: 0;
+    }
+    
+    /* Styles pour les produits */
+    
+    .featured-products {
+      padding: 50px;
+      text-align: center;
+      background-color: #fbf0dd;
+    }
+    
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+    
+    .product-card {
+      margin: 20px;
+      background-color: #fff;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    .product-card.hovered {
+      transform: scale(1.1);
+      transition-duration: 0.3s;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .product-card img {  /*celle dans bouquet.php*/
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    
+    .product-card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .page-accueil .product-card img {  /*celle dans accueil.php*/
+      width: 78%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    
+    .page-accueil .product-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .product-card p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+/* BOUQUET */ 
+
+  .container {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .bouquet-lien {
+    text-decoration: none;
+  }
+
+  .card-text, .card-title {
+    color: black;
+  }
+
+  .card:hover {
+    flex: 2;
+    background-color: #F4B5B2;
+  }
+
+/* PRODUIT */
+  
+  h1 {
+    text-align: center;
+    color: #944654;
+  }
+
+  .description-bouquet p {
+    justify-content: center;
+  }
+  
+  .produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #944654;
+  }
+  
+  .produit img {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .produit h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #944654;
+  }
+  
+  .produit p {
+    margin-bottom: 10px;
+  }
+  
+  .produit .prix {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #944654;
+  }
+
+  /* CONTACT */
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  .infos p {
+    margin-bottom: 0px;
+  }
+
